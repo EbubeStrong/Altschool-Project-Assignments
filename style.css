@@ -158,4 +158,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .feature-card {
+  width: 250px;
+}
 }
