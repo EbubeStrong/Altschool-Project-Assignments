@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-color: rgba(0, 153, 102, 1);
+  --black-color: rgba(0, 0, 0, 1);
+  --first-container: rgba(255, 255, 255, 1);
+  --second-container-1: rgba(153, 153, 153, 1);
+  --second-container-2: rgba(102, 102, 102, 1);
+  --yellow-background: rgba(255, 191, 0, 1);
+  --yellow-border: rgba(204, 153, 0, 1);
+}
+
+body {
+  font-family: "Lato", system-ui;
+  /* overflow: hidden; */
+}
+
+.main-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.first-container {
+  background-color: var(--first-container);
+  padding: 3rem 0 2rem 0;
+  overflow: hidden;
+}
+
+.first-container .text-content,
+.second-container .text-container {
+  /* padding: 40px 45px 20px 40px;
+  margin: 1rem auto 0 auto; */
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  width: 100%;
+  max-width: 900px;
+}
+
+.first-container .text-content h1 {
+  font-family: "Lato", system-ui;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.4px;
+  color: var(--black-color);
+  margin-bottom: 2rem;
+}
+
+.first-container .text-content p:nth-child(2) {
+  font-family: "Lato", system-ui;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--black-color);
+  width: 100%;
+  max-width: 400px;
+}
+
+.first-container .text-content p:nth-child(2) span {
+  font-family: "Lato", system-ui;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--green-color);
+}
+
+.first-container .text-content p:last-child {
+  font-family: "Lato", system-ui;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--black-color);
+  max-width: 400px;
+}
+
+/* start of second style */
+.second-container {
+  background-color: var(--second-container-2);
+  padding-bottom: 2rem;
+  /* position: relative; */
+  overflow: hidden;
+  /* border: 2px solid blue; */
+}
+
+.background {
+  width: 100%;
+  padding-top: 10px;
+  background-color: var(--second-container-1);
+}
+
+.background-2 {
+  /* width: 100%; */
+  padding-top: 10px;
+  background-color: var(--second-container-1);
+  /* position: absolute; */
+  /* top: 0; */
+  bottom: 0;
+  /* z-index: 1; */
+}
+
+.second-container .text-container {
+  padding: 0 30px 0 5px;
+  /* margin-top: 0; */
+  width: 100%;
+  max-width: 900px;
+  /* border: 2px solid blue; */
+  margin-top: 2rem;
+  position: relative;
+}
+
+.text-container .text-content {
+  /* border: 2px solid red; */
+  /* padding-top: 4rem; */
+  /* padding-left: 20px; */
+  background-color: #fff;
+  padding: 4rem 4rem 20px 30px;
+}
+
+.text-container .text-content p:first-child {
+  font-family: "Lato", system-ui;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+.text-container .text-content p:nth-child(3) {
+  font-family: "Lato", system-ui;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+.text-container .text-content .text-content-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 430px;
+  background-color: var(--yellow-background);
+  box-shadow: 0 4px 0 1px var(--yellow-border);
+  white-space: nowrap;
+}
+
+.text-content-2 h2 {
+  font-family: "Lato", system-ui;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28.8px;
+}
+
+@media (max-width: 1200px) {
+  .first-container .text-content,
+  .second-container .text-container {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    min-height: 80vh;
+  }
+
+  .first-container .text-content,
+  .second-container .text-container {
+    margin: 2rem auto;
+    width: 100%;
+  }
+
+  .first-container .text-content {
+    padding-left: 30px;
+  }
+
+  .second-container .text-container {
+    padding: 0 0 0 0;
+    /* border: 2px solid blue; */
+  }
+
+  .text-container .text-content {
+    background-color: #fff;
+    padding: 5rem 20px 20px 30px;
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+
+  .text-container .text-content .text-content-2 {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 10px 0 10px 20px;
+    text-align: left;
+    max-width: 400px;
+  }
+
+  .text-container .text-content p:first-child,
+  .text-container .text-content p:nth-child(3) {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+    body{
+        min-height: 0;
+    }
+    .text-container .text-content {
+    background-color: #fff;
+    padding: 7rem 20px 20px 30px;
+  }
+
+    .text-container .text-content .text-content-2 {
+  white-space: wrap;
+    max-width: 350px;
+}
+.text-content-2 h2 {
+  max-width: 250px;
+}
+}
+
+@media(max-width: 390px){
+    .first-container .text-content {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+    .text-container .text-content .text-content-2 {
+  white-space: wrap;
+    max-width: 300px;
+}
+.text-content-2 h2 {
+  max-width: 240px;
+}
+}
+
+@media(max-width: 320px){
+    .first-container .text-content {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+    .text-container .text-content .text-content-2 {
+  white-space: wrap;
+    max-width: 250px;
+}
+.text-content-2 h2 {
+  max-width: 200px;
+}
+}
