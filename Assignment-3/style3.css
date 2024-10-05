@@ -130,3 +130,33 @@
   font-size: 20px;
 }
 }
+
+@media (max-width: 450px) {
+  .picture-container {
+    min-height: 70vh;
+  }
+  .whiteText-container {
+    background-color: #fff;
+    padding: 5vh 20px 40px 1rem;
+  }
+
+  .whiteText-container h1 {
+    font-size: 30px;
+  }
+
+  .whiteText-container p {
+  font-size: 27px;
+  width: 100%;
+}
+
+  .whiteText-container h1 span {
+    font-size: 12px;
+  }
+  .pinkText-container {
+    width: 65%;
+  padding: 20px 40px 20px 0; 
+  }
+  .pinkText-container p {
+  font-size: 14px;
+}
+}
