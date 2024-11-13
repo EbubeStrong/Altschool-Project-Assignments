@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="./style5.css" />
+    <link rel="stylesheet" href="./nav.css">
+    <!-- <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet"
+    /> -->
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="headerSection large-screen">
+        <nav>
+          <div class="logo">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+
+          <div class="nav-links">
+            <ul>
+              <li>Download</li>
+              <li>Learn more</li>
+              <li>Pricing</li>
+              <li>Help</li>
+            </ul>
+            <button>Account</button>
+          </div>
+        </nav>
+      </header>
+
+      
+
+    <header class="headerSection-2 small-screen">
+       <div class="logo">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+
+          <div class="menu-icon">
+      <input type="checkbox" id="menuToggle" class="hamburger-checkbox" />
+      <label for="menuToggle" class="hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style="fill: rgba(0, 0, 0, 1)"
+        >
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
+      </label>
+
+      <div class="close">
+        <label for="menuToggle" class="close-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+            ></path>
+          </svg>
+        </label>
+
+        <nav class="nav-links">
+          <a href="">Download<span>➡</span></a>
+          <a href="">Learn more<span>➡</span></a>
+          <a href="">Pricing <span>➡</span></a>
+          <a href="">Help <span>➡</span></a>
+        </nav>
+      </div>
+      </div>
+    </header>
+
+      <main>
+        <section class="hero-section">
+          <div class="body-container">
+            <div class="first-container">
+              <div class="heading-text">
+                <h1>Checkout</h1>
+              </div>
+
+              <form action="#">
+                <div class="label-input-container first-label-container">
+                  <p class="first number-unit">
+                    <span>1</span> Your Basic Information
+                  </p>
+
+                  <div class="label-input-content">
+                    <div class="label-input labelInput">
+                      <label for="name">First Name</label>
+                      <input type="text" placeholder="Jane" required />
+                    </div>
+
+                    <div class="label-input labelInput">
+                      <label for="name">Last Name</label>
+                      <input type="text" placeholder="Doe" required />
+                    </div>
+                  </div>
+
+                  <div class="label-input-2">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      placeholder="janedoe@eample.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="label-input-container">
+                  <p class="second number-unit">
+                    <span>2</span> Your Payment Information
+                  </p>
+
+                  <div class="label-input-content label label-input-content-2">
+                    <div class="label-input">
+                      <label for="creditCard">Credit Card</label>
+
+                      <div class="input">
+                        <input
+                          class="card-input"
+                          type="number"
+                          placeholder="Card Number"
+                          required
+                        />
+
+                        <div class="input-content">
+                          <input
+                            class="number-input"
+                            type="number"
+                            id="expiry"
+                            name="expiry"
+                            placeholder="MM / YY"
+                            pattern="(0[1-9]|1[0-2])\/[0-9]{2}"
+                            maxlength="5"
+                            required
+                          />
+                          <input
+                            type="number"
+                            placeholder="CVC"
+                            maxlength="10"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="summit-content">
+                  <div class="btn">
+                    <button>Buy WP Pusher</button>
+                  </div>
+
+                  <div class="faq">
+                    <p class="needhelp">
+                      <span class="question">?</span>
+                      <b>Need any help?</b> Don't hesitate to
+                      <span class="contact">contact</span>
+                      support!
+                    </p>
+
+                    <div class="sponsor">
+                      <p>Powered by <span>stripe</span></p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="second-container">
+              <div class="second-content">
+                <h2>Freelancer</h2>
+                <div class="currency">
+                  <span class="dollarSign">$</span>
+                  <span class="num">99</span>
+                  <span class="year">/ year</span>
+
+                  <p class="renew"><i>Automatocally renews after 1 year</i></p>
+
+                  <ul>
+                    <li>
+                      <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg> </span> Use on
+                      <b class="figure">5</b> client sites
+                    </li>
+                    <li>
+                      <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg> </span> Private
+                      respositories
+                    </li>
+                    <li>
+                      <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg> </span> Email
+                      support
+                    </li>
+                  </ul>
+
+                  <div class="plan">
+                    <p class="clientSite">Need <b>20</b> client sites?</p>
+
+                    <h4>Switch to the Agency plan.</h4>
+
+                    <div class="line"></div>
+
+                    <div class="text">
+                      <p>
+                        FTP is horrible to deal with. WP Pusher solves that
+                        issue, and the customer support is awesome!
+                      </p>
+
+                      <div class="profile">
+                        <img src="./img/Bitmap.jpg" alt="pic" />
+                        <span>Kirk Beard</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2018 WP Pusher IVS <span> · Terms of Service</span></p>
+      </footer>
+    </div>
+  </body>
+</html>

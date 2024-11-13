@@ -14,11 +14,13 @@
   --second-container-2: rgba(102, 102, 102, 1);
   --yellow-background: rgba(255, 191, 0, 1);
   --yellow-border: rgba(204, 153, 0, 1);
+  --bg: transparent;
+  --white-color: #fff;
+  --blue-color: blue;
 }
 
 body {
   font-family: "Lato", system-ui;
-  /* overflow: hidden; */
 }
 
 .main-container {
@@ -34,10 +36,7 @@ body {
 
 .first-container .text-content,
 .second-container .text-container {
-  /* padding: 40px 45px 20px 40px;
-  margin: 1rem auto 0 auto; */
   margin: 0 auto;
-  /* border: 2px solid red; */
   width: 100%;
   max-width: 900px;
 }
@@ -80,10 +79,8 @@ body {
 /* start of second style */
 .second-container {
   background-color: var(--second-container-2);
-  padding-bottom: 2rem;
-  /* position: relative; */
+  padding-bottom: 1rem;
   overflow: hidden;
-  /* border: 2px solid blue; */
 }
 
 .background {
@@ -93,29 +90,20 @@ body {
 }
 
 .background-2 {
-  /* width: 100%; */
   padding-top: 10px;
   background-color: var(--second-container-1);
-  /* position: absolute; */
-  /* top: 0; */
   bottom: 0;
-  /* z-index: 1; */
 }
 
 .second-container .text-container {
   padding: 0 30px 0 5px;
-  /* margin-top: 0; */
   width: 100%;
   max-width: 900px;
-  /* border: 2px solid blue; */
   margin-top: 2rem;
   position: relative;
 }
 
 .text-container .text-content {
-  /* border: 2px solid red; */
-  /* padding-top: 4rem; */
-  /* padding-left: 20px; */
   background-color: #fff;
   padding: 4rem 4rem 20px 30px;
 }
@@ -156,6 +144,63 @@ body {
   line-height: 28.8px;
 }
 
+footer {
+  background-color: var(--second-container-2);
+  padding: 4rem 1rem 1rem 1rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.btns button {
+  background: var(--bg);
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  background-color: var(--white-color);
+  /* box-sizing: border-box; */
+}
+
+button a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 16px;
+  position: relative;
+  transition: 0.3s linear, color 0.2s ease-in;
+}
+
+button a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: var(--black-color);
+  bottom: -3px;
+  transition: 0.3s linear;
+  transform: translateX(2px);
+}
+
+button a:hover::before {
+  width: 100%;
+  /* transform: translate(50%, 50%); */
+}
+
+button a span {
+  display: none;
+  color: var(--black-color);
+  transition: 0.3s ease-in-out, transform 0.6s ease-in;
+}
+
+button a:hover span {
+  display: inline-flex;
+}
+
 @media (max-width: 1200px) {
   .first-container .text-content,
   .second-container .text-container {
@@ -165,7 +210,8 @@ body {
 
 @media (max-width: 850px) {
   body {
-    min-height: 80vh;
+    height: 100%;
+    min-height: 70vh;
   }
 
   .first-container .text-content,
@@ -180,14 +226,12 @@ body {
 
   .second-container .text-container {
     padding: 0 0 0 0;
-    /* border: 2px solid blue; */
   }
 
   .text-container .text-content {
     background-color: #fff;
     padding: 5rem 20px 20px 30px;
     width: 100%;
-    /* border: 2px solid red; */
   }
 
   .text-container .text-content .text-content-2 {
@@ -203,50 +247,54 @@ body {
   .text-container .text-content p:nth-child(3) {
     font-size: 18px;
   }
+
+  footer {
+    padding: 1rem 1rem 1rem 1rem;
+  }
 }
 
 @media (max-width: 500px) {
-    body{
-        min-height: 0;
-    }
-    .text-container .text-content {
+  body {
+    min-height: 0;
+  }
+  .text-container .text-content {
     background-color: #fff;
     padding: 7rem 20px 20px 30px;
   }
 
-    .text-container .text-content .text-content-2 {
-  white-space: wrap;
+  .text-container .text-content .text-content-2 {
+    white-space: wrap;
     max-width: 350px;
-}
-.text-content-2 h2 {
-  max-width: 250px;
-}
-}
-
-@media(max-width: 390px){
-    .first-container .text-content {
-    padding-left: 30px;
-    padding-right: 20px;
   }
-    .text-container .text-content .text-content-2 {
-  white-space: wrap;
-    max-width: 300px;
-}
-.text-content-2 h2 {
-  max-width: 240px;
-}
-}
-
-@media(max-width: 320px){
-    .first-container .text-content {
-    padding-left: 30px;
-    padding-right: 20px;
-  }
-    .text-container .text-content .text-content-2 {
-  white-space: wrap;
+  .text-content-2 h2 {
     max-width: 250px;
+  }
 }
-.text-content-2 h2 {
-  max-width: 200px;
+
+@media (max-width: 390px) {
+  .first-container .text-content {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .text-container .text-content .text-content-2 {
+    white-space: wrap;
+    max-width: 300px;
+  }
+  .text-content-2 h2 {
+    max-width: 240px;
+  }
 }
+
+@media (max-width: 320px) {
+  .first-container .text-content {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .text-container .text-content .text-content-2 {
+    white-space: wrap;
+    max-width: 250px;
+  }
+  .text-content-2 h2 {
+    max-width: 200px;
+  }
 }

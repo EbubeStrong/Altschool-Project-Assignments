@@ -4,9 +4,12 @@
   margin: 0;
 }
 
+body{
+  background-color: rgba(173, 216, 230, 0.144);
+}
+
 .main-container {
   width: 100%;
-  background-color: rgba(173, 216, 230, 0.144);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +22,6 @@
   display: flex;
   align-items: center;
   gap: 3rem;
-  /* border: 2px solid green; */
   overflow-x: scroll;
 }
 
@@ -29,7 +31,6 @@
 
 /* start of the text first container */
 .text-container {
-  /* border: 2px solid red; */
   width: 100%;
 }
 
@@ -51,19 +52,25 @@
   white-space: nowrap;
 }
 
-.text-content p {
+.text-content .text_one, .text-content .text_two {
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
+   width: 100%;
+  max-width: 450px;
+  color: #737373;
+}
+
+.text-content .text_two{
+  display: none;
 }
 
 /* start of the form container */
 .form-container {
   width: 100%;
-  /* border: 2px solid blue; */
   background-color: rgba(255, 255, 255, 1);
-  /* box-shadow: 0 10px 10px 2px rgba(4, 8, 19, 0.1); */
   box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+
 }
 
 form {
@@ -74,19 +81,17 @@ form {
 .label-input-container {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 20px;
-  /* padding: 0 10px; */
-  /* border: 2px solid rgb(17, 0, 255); */
   margin-top: 20px;
+  position: relative;
 }
 
 .label-input {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  /* border: 2px solid red; */
   width: 100%;
+  position: relative;
 }
 
 .label-input label {
@@ -112,7 +117,6 @@ form {
 }
 
 .btn button {
-  /* width: 500px; */
   width: 100%;
   height: 48px;
   background-color: rgba(46, 196, 182, 1);
@@ -124,8 +128,6 @@ form {
   font-size: 16px;
   font-weight: 600;
   line-height: 16px;
-  /* letter-spacing: 0.20000000298023224px; */
-  /* text-align: center; */
   color: rgba(255, 255, 255, 1);
 }
 
@@ -133,6 +135,7 @@ form {
 .footer-2 {
   width: 100%;
   margin: 10px auto;
+
 }
 
 .footer-1 p,
@@ -156,6 +159,59 @@ form {
   display: none;
 }
 
+.footer-3 {
+  padding: 1rem 1rem 1rem 1rem;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.footer-3 .btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-3 .btns button {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  background-color: #fff;
+}
+
+.footer-3 button a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  position: relative;
+  transition: 0.3s linear, color 0.2s ease-in;
+}
+
+.footer-3 button a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #000;
+  bottom: -3px;
+  transition: 0.3s linear;
+  transform: translateX(2px);
+}
+
+.footer-3 button a:hover::before {
+  width: 100%;
+}
+
+.footer-3 button a span {
+    display: none;
+    color: #000;
+    transition: 0.3s ease-in-out, transform 0.6s ease-in;
+  }
+
+.footer-3 button a:hover span {
+  display: inline-flex;
+}
+
 @media (max-width: 850px) {
   .main-container {
     padding: 3rem 2rem 4rem 2rem;
@@ -163,7 +219,6 @@ form {
   .parent-container {
     width: 100%;
     max-width: 1200px;
-    /* border: 2px solid orange; */
   }
 
   .form-container {
@@ -205,7 +260,15 @@ form {
     max-width: 900px;
   }
   .text-container {
-    /* border: 2px solid red; */
     width: 100%;
   }
+  .label-input-container {
+    flex-direction: column;
+}
+.text-content .text_one{
+  display: none;
+}
+.text-content .text_two{
+  display: block;
+}
 }
