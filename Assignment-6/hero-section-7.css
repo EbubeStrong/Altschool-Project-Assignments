@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/gilroy//Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #0065fe;
+  --secondary-color: #005ae2;
+  --text-color: #141414;
+  --background-color: #f9fbfd;
+  --white-color: #fff;
+  --light-black: rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Section Styles */
+.faqs {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.faqs h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-question {
+  cursor: pointer;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.faq-question::after {
+  content: "+";
+  font-size: 1.5rem;
+}
+
+.faq-toggle:checked + .faq-question::after {
+  content: "-";
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-toggle:checked ~ .faq-answer {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+}

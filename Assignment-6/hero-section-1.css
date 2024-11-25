@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/gilroy//Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #0065fe;
+  --secondary-color: #005ae2;
+  --text-color: #141414;
+  --background-color: #f9fbfd;
+  --white-color: #fff;
+  --light-black: rgba(0, 0, 0, 0.1);
+}
+
+.hero-section-1 {
+  background: linear-gradient(to right, rgba(240, 240, 240, 0.61), white);
+  padding: 20px 0 5px 0;
+  position: relative;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 910px;
+  margin: 0 auto 2rem auto;
+  border: 2px solid blue;
+}
+
+.content-text h1 {
+  font-family: "Gilroy-Bold" sans-serif;
+  font-size: 48px;
+  line-height: 96px;
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+
+.content-text h1 span {
+  color: var(--secondary-color);
+  position: relative;
+}
+
+.content-text h1 span::after {
+  content: url("./images/Custom_Underline.png");
+  display: inline-block;
+  -webkit-margin-before: 24px;
+  margin-block-start: 24px;
+  position: absolute;
+  bottom: -2rem;
+  left: -50px;
+  right: -50px;
+}
+
+.content-text h1,
+.content-text p {
+  text-align: center;
+}
+
+.content-text p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  max-width: 80%;
+}
+
+.content-text .btns {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.content-text .btns button:first-child {
+  width: 142px;
+  height: 44px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 100px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.content-text .btns button:last-child {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Tablet, Desktop Responsivenss */
+@media screen and (min-width: 800px) {
+    .hero-section-1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 200px;
+    background-color: var(--white-color);
+    z-index: 1;
+    filter: blur(20px);
+    opacity: 0.8;
+  }
+
+  .content-text h1 span::after {
+    content: url("./images/Custom_Underline.png");
+    display: inline-block;
+    -webkit-margin-before: 24px;
+    margin-block-start: 24px;
+    position: absolute;
+    bottom: -3rem;
+    left: -50px;
+    right: -50px;
+  }
+  /* image-content-1 */
+  .image-sections .image-content-1 img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero-section-1::after {
+    position: absolute;
+    width: 150px;
+  }
+  .content-text {
+    max-width: 550px;
+  }
+  .content-text h1 {
+    font-family: "Gilroy-Bold" sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .content-text p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .content-text {
+    max-width: 550px;
+    border: 2px solid rgb(33, 36, 33);
+  }
+  .content-text h1 {
+    font-size: 38px;
+    max-width: 95%;
+    text-align: center;
+    border: 2px solid rgb(33, 36, 33);
+  }
+  .content-text h1 span::after {
+    content: "";
+    background-image: url("./images/Custom_Underline.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: -12px;
+    left: 20px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .content-text {
+    max-width: 450px;
+    margin-top: 2rem;
+    border: 2px solid green;
+  }
+  .content-text h1 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .content-text h1 span::after {
+    height: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .content-text {
+    max-width: 100%;
+    margin-top: 0;
+    border: 2px solid green;
+    padding-top: 10px;
+  }
+  .content-text h1 {
+    font-size: 20px;
+    line-height: 45px;
+  }
+  .content-text h1 span::after {
+    height: 10px;
+  }
+}
+
+@media (max-width: 365px) {
+  .content-text {
+    max-width: 100%;
+    margin-top: 0;
+    border: 2px solid green;
+    padding-top: 10px;
+  }
+  .content-text h1 {
+    font-size: 13px;
+    line-height: 20px;
+    max-width: 250px;
+  }
+  .content-text h1 span::after {
+    height: 5px;
+    left: 10px;
+  }
+}

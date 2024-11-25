@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/gilroy//Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #0065fe;
+  --secondary-color: #005ae2;
+  --text-color: #141414;
+  --background-color: #f9fbfd;
+  --white-color: #fff;
+  --light-black: rgba(0, 0, 0, 0.1);
+}
+
+.hero-section-6 {
+  margin: 3rem 0;
+  padding: 4rem;
+  width: 100%;
+  background-image: url("./images/FAQs_Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.hero-section-6 .form-container {
+  max-width: 476px;
+  height: 355px;
+  padding: 42px 0 0 0;
+  border-radius: 12px;
+  border: 2px solid green;
+  margin: 0 auto;
+  background-color: var(--background-color);
+}
+
+.form-container .input-select-content {
+  width: 392px;
+  height: 127px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.input-select-content .first-input {
+  width: 392px;
+  height: 55px;
+  padding: 8px 12px 8px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+}
+
+.input-select-content .select-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.select-content input::placeholder,
+.select-content select {
+  color: var(--primary-color);
+}
+
+.select-content select {
+  width: 202px;
+  padding: 18px 0 18px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+}
+
+.select-content .last-input {
+  width: 178px;
+  height: 48px;
+  padding: 8px 12px 8px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+}
+
+.form-container .btn-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.form-container .btn-input button {
+  width: 392px;
+  height: 48px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 100px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  outline: none;
+}
+
+.form-container .text {
+  width: 373px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.form-container p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: var(--primary-color);
+}

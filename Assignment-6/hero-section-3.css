@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/gilroy//Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #0065fe;
+  --secondary-color: #005ae2;
+  --text-color: #141414;
+  --background-color: #f9fbfd;
+  --white-color: #fff;
+  --light-black: rgba(0, 0, 0, 0.1);
+}
+
+.hero-section-3 {
+  background: #f9fbfd;
+  /* padding: 40px 140px 30px 140px; */
+}
+
+.hero-section-3 .text-content-2 {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  border: 2px solid green;
+}
+.hero-section-3 .text-content-2 .parent-text-content {
+  display: flex;
+  gap: 1.3rem;
+  border: 2px solid blue;
+}
+
+.hero-section-3 .text-content-2 .text-number h3 {
+  font-family: "Gilroy-SemiBold", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.hero-section-3 .text-content-2 .text-number p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.hero-section-3 .container.text-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border: 2px solid green;
+}
+
+.container.text-container .text-content-1 h2 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+}
+.container.text-container .text-content-1 h2 .span-text {
+  border: 2px solid red;
+  display: inline-block;
+}
+.container.text-container .text-content-1 h2 span {
+  color: var(--primary-color);
+}
+
+/* Start of responsiveness */
+@media (max-width: 650px) {
+.hero-section-3 .text-content-2 .parent-text-content {
+  flex-direction: column;
+}
+}
+
+@media (max-width: 550px) {
+  .hero-section-3 .text-content-2 {
+  flex-direction: column;
+  gap: 2rem;
+}
+}

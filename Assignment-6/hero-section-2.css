@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/gilroy//Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #0065fe;
+  --secondary-color: #005ae2;
+  --text-color: #141414;
+  --background-color: #f9fbfd;
+  --white-color: #fff;
+  --light-black: rgba(0, 0, 0, 0.1);
+}
+
+.hero-section-2 .image-section {
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  border: 2px solid rgb(21, 22, 21);
+}
+
+.image-section .image-content-1 img {
+  height: 300px;
+}
+
+/* image-content-2 */
+.image-section .image-content-2 {
+  position: absolute;
+  top: 15px;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  padding: 40px 60px 40px 60px;
+  /* gap: 16px; */
+  background: linear-gradient(to right, rgb(233, 229, 229), white);
+  border-radius: 24px;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.image-content-2 .text {
+  width: 100%;
+  border: 2px solid green;
+  padding-left: 2rem;
+}
+
+.image-section .image-content-2 p {
+  border: 2px solid red;
+  margin: 0 auto;
+  max-width: 75%;
+  font-family: "Gilroy-Bold" sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.image-content .image-content-3 {
+  margin-top: 10px;
+  padding: 10px 2rem;
+  width: 100%;
+  border: 2px solid red;
+  background-image: url("./images/Rectangle background-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.image-content-3 .image {
+  margin: 0 auto;
+  max-width: 90%;
+  border: 2px solid red;
+}
+
+.image-content .image-content-3 img {
+  width: 100%;
+}
+
+/* Start of responsiveness */
+@media (max-width: 920px) {
+  .hero-section-2 .image-section {
+    width: 70%;
+  }
+  .image-section .image-content-2 img {
+    width: 70%;
+    border: 2px solid blue;
+  }
+  .image-section .image-content-2 .text {
+    margin-left: 30px;
+  }
+  .image-section .image-content-2 p {
+    margin: 0 auto;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-section-2 .image-section {
+    width: 90%;
+  }
+  .image-section .image-content-2 p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .image-content .image-content-3 {
+    padding: 0;
+  }
+
+  .image-content-3 .image {
+    margin: 0;
+    max-width: 100%;
+  }
+  .container.text-container{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 365px) {
+  .hero-section-2 .image-section {
+    width: 100%;
+  }
+  .image-section .image-content-2 {
+    padding-left: 10px;
+  }
+  .image-content-2 .text {
+    max-width: 100%;
+    padding: 0 2rem 0 0;
+  }
+  .image-section .image-content-2 p {
+    max-width: 100%;
+    font-size: 12px;
+  }
+}
