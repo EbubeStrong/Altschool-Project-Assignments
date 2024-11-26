@@ -112,8 +112,8 @@ header .active{
   top: 0;
   right: 0;
   bottom: 0;
-  width: 50%;
-  height: 75%;
+  width: 70%;
+  height: 100%;
   background-color: var(--background-color);
   text-align: center;
   z-index: 1;
@@ -147,8 +147,8 @@ header .active{
   align-items: center;
   justify-content: center;
   gap: 50px;
-  width: 50%;
-  height: 75%;
+  width: 70%;
+  height: 100%;
   background-color: var(--background-color);
   z-index: 1;
   transform: translateX(0);
