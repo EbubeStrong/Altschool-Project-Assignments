@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #0065fe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  width: 300px;
+}
+
+li {
+  list-style-type: none;
+}
+p {
+  color: var(--text-color);
+}
+
+/* start of header */
+.header.desktop-screen {
+  display: none;
+}
+
+/* hero-section-4 */
+.subText-content .subText img,
+.priceBox img,
+.btn-input img {
+  width: 20px;
+}
+
+/* Start of main */
+.main-container,
+.hero-section-2,
+.hero-section-3,
+.hero-section-4,
+.hero-section-6 {
+  width: 100%;
+  overflow: hidden;
+}
+
+input[type="text"] {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.main-container{
+  position: relative;
+}
+
+aside{
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+}
+
+aside  a  {
+  font-size: 30px;
+  border: none;
+  outline: none;
+  scroll-behavior: auto;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: var(--primary-color); }

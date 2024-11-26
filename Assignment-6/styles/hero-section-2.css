@@ -24,18 +24,25 @@
   --light-black: rgba(0, 0, 0, 0.1);
 }
 
+.hero-section-2{
+   width: 100%;
+  background-image:  url("../images/hero-section-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
 .hero-section-2 .image-section {
   position: relative;
   margin: 0 auto;
   width: 60%;
-  border: 2px solid rgb(21, 22, 21);
 }
 
 .image-section .image-content-1 img {
   height: 300px;
 }
 
-/* image-content-2 */
 .image-section .image-content-2 {
   position: absolute;
   top: 15px;
@@ -44,7 +51,6 @@
   right: 0;
   bottom: 20px;
   padding: 40px 60px 40px 60px;
-  /* gap: 16px; */
   background: linear-gradient(to right, rgb(233, 229, 229), white);
   border-radius: 24px;
   border: 1px solid var(--primary-color);
@@ -55,12 +61,10 @@
 
 .image-content-2 .text {
   width: 100%;
-  border: 2px solid green;
   padding-left: 2rem;
 }
 
 .image-section .image-content-2 p {
-  border: 2px solid red;
   margin: 0 auto;
   max-width: 75%;
   font-family: "Gilroy-Bold" sans-serif;
@@ -71,11 +75,10 @@
 }
 
 .image-content .image-content-3 {
-  margin-top: 10px;
+  margin-top: 2.2rem;
   padding: 10px 2rem;
   width: 100%;
-  border: 2px solid red;
-  background-image: url("./images/Rectangle background-min.png");
+  background-image: url("../images/Rectangle background-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -85,7 +88,6 @@
 .image-content-3 .image {
   margin: 0 auto;
   max-width: 90%;
-  border: 2px solid red;
 }
 
 .image-content .image-content-3 img {
@@ -99,7 +101,6 @@
   }
   .image-section .image-content-2 img {
     width: 70%;
-    border: 2px solid blue;
   }
   .image-section .image-content-2 .text {
     margin-left: 30px;

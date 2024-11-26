@@ -17,7 +17,6 @@
 
 :root {
   --primary-color: #0065fe;
-  --secondary-color: #005ae2;
   --text-color: #141414;
   --background-color: #f9fbfd;
   --white-color: #fff;
@@ -26,7 +25,12 @@
 
 /* Start of header */
 header {
-  background-color: var(--white-color);
+   width: 100%;
+  background-image:  url("../images/hero-section-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
   box-shadow: 0 2px 4px var(--light-black);
   padding: 0 1rem 1rem 1rem;
   overflow: hidden;
@@ -34,6 +38,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
+}
+header .active{
+  color: var(--primary-color);
 }
 
 .header.mobile-screen {
@@ -52,35 +59,36 @@ header {
   gap: 2rem;
 }
 
-.header.mobile-screen nav ul li:nth-child(2) span {
+.header nav ul li:nth-child(2) span {
   position: relative;
 }
 
-.header.mobile-screen nav ul li:nth-child(2) {
+.header nav ul li:nth-child(2) {
   margin-bottom: 0;
   transition: margin-bottom 0.3s;
 }
 
-.header.mobile-screen nav ul li:nth-child(2) span .hover-text {
+.header nav ul li:nth-child(2) span .hover-text {
   position: absolute;
   top: 20px;
   right: -1rem;
   display: flex;
-  border: 2px solid red;
   flex-direction: column;
   visibility: hidden;
+  background-color: var(--background-color);
+  padding: 5px;
   opacity: 0;
   opacity: 0;
   transition: visibility 0.3s, opacity 0.3s;
 }
 
-.header.mobile-screen nav ul li:nth-child(2):hover .hover-text {
+.header nav ul li:nth-child(2):hover .hover-text {
   visibility: visible;
   opacity: 1;
 }
 
 .header.mobile-screen nav ul li:nth-child(2):hover {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .hamburger-checkbox {
@@ -105,8 +113,8 @@ header {
   right: 0;
   bottom: 0;
   width: 50%;
-  height: 60%;
-  background-color: rgba(245, 248, 250, 1);
+  height: 75%;
+  background-color: var(--background-color);
   text-align: center;
   z-index: 1;
   display: flex;
@@ -140,8 +148,8 @@ header {
   justify-content: center;
   gap: 50px;
   width: 50%;
-  height: 60%;
-  background-color: rgba(245, 248, 250, 1);
+  height: 75%;
+  background-color: var(--background-color);
   z-index: 1;
   transform: translateX(0);
   transition: transform 1s ease-in-out;
@@ -210,7 +218,16 @@ header {
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
+    padding-bottom: 1rem;
   }
+  .header nav ul li:nth-child(2) span .hover-text {
+  position: absolute;
+  top: 20px;
+  right: -1rem;
+}
+.header.desktop-screen nav ul li:nth-child(2):hover {
+  margin-bottom: 2rem;
+}
   nav ul {
     display: flex;
     gap: 1em;

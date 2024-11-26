@@ -22,25 +22,43 @@
   --background-color: #f9fbfd;
   --white-color: #fff;
   --light-black: rgba(0, 0, 0, 0.1);
+  --faq-item:  #e0e0e0;
 }
 
 /* FAQ Section Styles */
 .faqs {
-  max-width: 800px;
+  max-width: 900px;
   margin: 4rem auto;
   padding: 2rem;
 }
 
-.faqs h2 {
+.faqs .heading-text {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 2rem;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
+.faqs h2 {
+  font-size: 2rem;
+  position: relative;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.faqs h2::before {
+  content: url("../images/Line.png");
+  position: absolute;
+  text-align: center;
+  left: -10px;
+  top: 0;
+}
+
 .faq-item {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--faq-item);
   margin-bottom: 1rem;
 }
 
@@ -54,7 +72,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
+  gap: 10px;
+  font-weight: 500;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
 }
 
 .faq-question::after {
@@ -69,10 +92,14 @@
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.5s ease;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: left;
 }
 
 .faq-toggle:checked ~ .faq-answer {
   max-height: 1000px;
-  transition: max-height 0.5s ease-in;
+  transition: max-height 0.5s ease;
 }

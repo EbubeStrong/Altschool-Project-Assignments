@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/gilroy//Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #0065fe;
+  --text-color: #141414;
+  --white-color: #fff;
+  --background-color: rgb(213, 234, 241);
+  --light-black: rgba(0, 0, 0, 0.1);
+}
+
+.hero-section-4 {
+  padding: 4rem 0 2rem 0;
+}
+
+.hero-section-4 .container.text-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;  
+}
+
+.container.text-content .text-content-1 {
+  margin-top: 4rem;
+  padding-left: 3rem;
+}
+
+.container.text-content .text-content-1 h2 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  position: relative;
+}
+
+.container.text-content .text-content-1 h2::before{
+  content: url('../images/Line.png'); 
+  position: absolute;
+  left: -15px;
+  top: 0;
+}
+
+.container.text-content .text-content-1 p {
+  font-family: "Gilroy-Medium";
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  width: 67%;
+  color: var(--text-color);
+}
+
+.container.text-content .text-content-1 h2 span {
+  color: var(--primary-color);
+}
+
+.container.text-content .text-content-2 .subText-content {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 4rem 0 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.subText .image-icon {
+  background-color: var(--background-color);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+
+.subText h3 {
+  font-family: "Gilroy-SemiBold", sans-serif;
+  font-size: 1.5em;
+  line-height: 28px;
+  text-align: left;
+  white-space: nowrap;
+  color: var(--text-color);
+}
+
+.subText p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  width: 100%;
+  color: var(--text-color);
+}
+
+@media (max-width: 1200px) {
+  .subText h3 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 950px) {
+  .container.text-content .text-content-2 .subText-content {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero-section-4 .container.text-content,
+  .container.text-content .text-content-2 .subText-content {
+    flex-direction: column;
+  }
+  .container.text-content .text-content-1 {
+    margin-top: 0;
+    padding-left: 0;
+  }
+  .container.text-content .text-content-1 h2{
+    padding-left: 10px;
+  }
+  .container.text-content .text-content-1 h2::before{
+    left: 1px;
+  }
+  
+  .container.text-content .text-content-1 p {
+    width: 100%;
+  }
+  .container.text-content .text-content-2 .subText-content {
+    margin: 0;
+  }
+}
