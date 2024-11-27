@@ -146,23 +146,28 @@ body {
 
 footer {
   background-color: var(--second-container-2);
-  padding: 4rem 1rem 1rem 1rem;
+  padding: 4rem 1rem 1rem 0;
 }
 
 .btns {
   display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  /* display: flex;
   justify-content: space-between;
   padding: 1rem;
   width: 100%;
   max-width: 870px;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 .btns button {
   background: var(--bg);
   border: none;
   outline: none;
-  padding: 1rem 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  /* padding: 1rem 2rem; */
   background-color: var(--white-color);
   /* box-sizing: border-box; */
 }
@@ -253,6 +258,13 @@ button a:hover span {
   }
 }
 
+@media (max-width: 600px) {
+  .btns {
+  display: flex;
+  justify-content: space-between;
+    padding: 15px;
+}
+}
 @media (max-width: 500px) {
   body {
     min-height: 0;

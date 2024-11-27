@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -11,12 +11,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-section{
+section {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  min-height: 20vh;
+  padding-top: 4rem;
 }
 
 .main-container {
@@ -44,7 +44,7 @@ section{
 
 .whiteText-container {
   background-color: #fff;
-  padding: 5vh 30px 30px 30px;
+  padding: 2vh 30px 30px 30px;
   border-radius: 7px;
 }
 
@@ -62,7 +62,9 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1vw;
+  height: 4rem;
+  /* padding: 1vw; */
+  /* padding: 30px; */
   text-align: center;
   margin-left: 25px;
   border-radius: 4px;
@@ -70,7 +72,8 @@ section{
 
 .pinkText-container p {
   font-weight: 700;
-  font-size: 3vw;
+  /* font-size: 3vw; */
+  font-size: 20px;
 }
 
 footer {
@@ -86,7 +89,8 @@ footer {
   background: transparent;
   border: none;
   outline: none;
-  padding: 1rem 2rem;
+  padding: 10px;
+  border-radius: 10px;
   background-color: #fff;
 }
 
@@ -114,15 +118,47 @@ button a:hover::before {
 }
 
 button a span {
-    display: none;
-    color: #000;
-    transition: 0.3s ease-in-out, transform 0.6s ease-in;
-  }
+  display: none;
+  color: #000;
+  transition: 0.3s ease-in-out, transform 0.6s ease-in;
+}
 
- button a:hover span {
+button a:hover span {
   display: inline-flex;
 }
 
+@media (max-width: 750px) {
+  .whiteText-container p {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 495px) {
+  .parent-container {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  .whiteText-container p {
+    font-size: 20px;
+  }
+  .pinkText-container {
+    height: 3.5rem;
+  }
+}
+@media (max-width: 412px) {
+  .whiteText-container p {
+    font-size: 17px;
+  }
+  .pinkText-container {
+    height: 3rem;
+  width: 75%;
+  }
+  .pinkText-container p {
+  font-size: 15px;
+}
+}
+/* 
 @media(max-width: 750px){
   .main-container {
   margin-top: 3rem;
@@ -131,7 +167,6 @@ button a span {
 
 @media (max-width: 720px) {
   .pinkText-container {
-    padding: 15px;
   }
 
   .pink-container p{
@@ -152,7 +187,6 @@ button a span {
     font-size: 5vw;
 }
 .pinkText-container {
-    padding: 3vw;
     margin-left: 15px;
   }
 }
@@ -165,4 +199,4 @@ button a span {
     .pink-container p{
     font-size: 25px;
   }
-}
+} */

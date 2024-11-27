@@ -6,6 +6,7 @@
 
 body{
   background-color: rgba(173, 216, 230, 0.144);
+  /* padding-top: 5rem; */
 }
 
 .main-container {
@@ -13,7 +14,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 4rem 4rem 4rem;
+  padding: 2rem 4rem 4rem 4rem;
 }
 
 .parent-container {
@@ -160,28 +161,29 @@ form {
 }
 
 .footer-3 {
-  padding: 1rem 1rem 1rem 1rem;
+  /* padding: 1rem 1rem 1rem 1rem; */
   width: 100%;
-  max-width: 450px;
-  margin: 0 auto;
+  /* max-width: 450px; */
+  /* margin: 0 auto; */
 }
 
 .footer-3 .btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .footer-3 .btns button {
   background: transparent;
   border: none;
   outline: none;
-  padding: 1rem 2rem;
-  background-color: #fff;
+  padding: 15px;
+  background-color: rgba(46, 196, 182, 1);
+  border-radius: 10px;
 }
 
 .footer-3 button a {
   text-decoration: none;
-  color: #000;
+  color: rgba(0, 0, 0, 1);
   font-size: 16px;
   position: relative;
   transition: 0.3s linear, color 0.2s ease-in;
@@ -270,5 +272,10 @@ form {
 }
 .text-content .text_two{
   display: block;
+}
+.footer-3 .btns {
+  display: flex;
+  justify-content: space-between;
+    padding: 15px;
 }
 }
