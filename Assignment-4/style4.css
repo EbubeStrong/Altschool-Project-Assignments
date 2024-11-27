@@ -264,9 +264,7 @@ form {
   .text-container {
     width: 100%;
   }
-  .label-input-container {
-    flex-direction: column;
-}
+ 
 .text-content .text_one{
   display: none;
 }
@@ -277,5 +275,11 @@ form {
   display: flex;
   justify-content: space-between;
     padding: 15px;
+}
+}
+
+@media(max-width: 550px){
+   .label-input-container {
+    flex-direction: column;
 }
 }
