@@ -203,6 +203,11 @@
   .content-text h1 span::after {
     height: 10px;
   }
+  .content-text p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 13px;
+  padding: 0 20px;
+}
 }
 
 @media (max-width: 365px) {
@@ -220,4 +225,5 @@
     height: 5px;
     left: 10px;
   }
+  
 }
