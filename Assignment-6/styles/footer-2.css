@@ -17,6 +17,8 @@
 
 :root {
   --text-color: #141414;
+  --primary-color: #0065fe;
+  --white-color: #fff;
 }
 
 footer .footer_2 {
@@ -120,51 +122,51 @@ footer .footer_2 {
   text-align: left;
 }
 
-.btns {
+.footer_3 .btn-buttons {
   display: flex;
   margin-top: 30px;
   justify-content: space-around;
 }
 
-footer .btns button {
+.footer_3 .btn-buttons button {
   background: transparent;
   border: none;
   outline: none;
   padding: 15px;
-  background-color: var(--second-container-color);
+  background-color: var(--primary-color);
   border-radius: 10px;
 }
 
-footer button a {
+.footer_3 button a {
   text-decoration: none;
-  color: var(--first-container-color);
+  color: var(--white-color);
   font-size: 16px;
   position: relative;
   transition: 0.3s linear, color 0.2s ease-in;
 }
 
-footer button a::before {
+.footer_3 button a::before {
   content: "";
   position: absolute;
   width: 0;
   height: 3px;
-  background-color: #000;
+  background-color: var(--text-color);
   bottom: -3px;
   transition: 0.3s linear;
   transform: translateX(2px);
 }
 
-footer button a:hover::before {
+.footer_3 button a:hover::before {
   width: 100%;
 }
 
-footer button a span {
+.footer_3 button a span {
   display: none;
-  color: #000;
+  color: var(--text-color);
   transition: 0.3s ease-in-out, transform 0.6s ease-in;
 }
 
-footer button a:hover span {
+.footer_3 button a:hover span {
   display: inline-flex;
 }
 
@@ -219,7 +221,7 @@ footer button a:hover span {
 }
 
 @media (max-width: 650px) {
-  .btns {
+  .footer_3 .btn-buttons {
     padding: 15px;
     justify-content: space-between;
   }
