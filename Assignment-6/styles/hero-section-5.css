@@ -121,6 +121,7 @@
 
 .hero-section-5 .priceBox-content .priceBox:first-child {
   border-right: none;
+  border-radius: 20px 0 0 20px;
 }
 
 .hero-section-5 .priceBox-content .priceBox:nth-child(2) {
@@ -140,6 +141,7 @@
 .hero-section-5 .priceBox-content .priceBox:last-child {
   border-left: none;
   padding: 10px 10px 45px 20px;
+  border-radius: 0 20px 20px 0;
 }
 
 .hero-section-5 .priceBox-content .priceBox:first-child,
